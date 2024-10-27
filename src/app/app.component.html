@@ -1,0 +1,11 @@
+<app-header></app-header>
+
+<main>
+  <app-search></app-search>
+
+  <!-- Данный тег обращается в app-routing.module и там смотрит пути, которые мы указали. И на какие пути переходить и открывать страницы
+      Если у нас пустой путь, то будет открываться каталог - CatalogPageComponent
+      Если у нас будет /film -> FilmPageComponent  
+  -->
+  <router-outlet></router-outlet>
+</main>

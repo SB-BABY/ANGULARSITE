@@ -1,0 +1,16 @@
+<section class="search">
+    <div class="container">
+        <div class="search-box">
+            <input 
+                [value]="searchStringComp"
+                id="search-input"
+                type="text" 
+                placeholder="Что хотите посмотреть?"
+                (input)="updateValue($event)"
+            >
+            <button id="search-button" (click)="updateSearch($event)">
+                <span>Найти</span>
+            </button>
+        </div>
+    </div>
+</section>

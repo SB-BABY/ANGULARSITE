@@ -1,0 +1,17 @@
+<!-- ! href - не подходит и поэтому мы меняем на routerLink-->
+<!-- <a [href]="cardFilm.link" class="content-cards__item"> -->
+<a [routerLink]="['/film', cardFilm.id]" class="content-cards__item">
+    <div class="contents__item--img">
+        <img [src]="cardFilm.img" [alt]="cardFilm.id">
+    </div>
+    <div class="content-cards__item--title">
+        <h5>{{ cardFilm.title }}</h5>
+        <span>{{ cardFilm.category }}</span>
+    </div>
+    <p class="content-cards__item--description">
+        {{ cardFilm.subtitle }}
+    </p>
+    <p class="content-cards__item--rating">
+        {{ cardFilm.rating }}
+    </p>
+</a>

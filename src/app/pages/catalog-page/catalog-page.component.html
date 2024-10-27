@@ -1,0 +1,25 @@
+<section class="content">
+    <div class="container">
+        <div class="content-box">
+            <div class="content-main">
+                <h2 class="content-main__title">
+                    Результаты поиска
+                </h2>
+                <div class="content-cards">
+
+                    <!-- НОВЫЙ ПЕРЕБОР -->
+                    @for (film of filmsPage; track film.id) {
+                    <app-card [cardFilm]="film">
+                    </app-card>
+                    }
+
+                    <!-- СТАРЫЙ ПЕРЕБОР ФИЛЬМОВ -->
+                    <!-- <app-card *ngFor="let film of zalupa"></app-card> -->
+                </div>
+            </div>
+
+            <app-sidebar></app-sidebar>
+
+        </div>
+    </div>
+</section>
